@@ -1,0 +1,43 @@
+############
+############ Configure SSH to allow only key-based authentication
+############
+
+# Disable password authentication
+PasswordAuthentication no
+
+# Disable root login
+PermitRootLogin no
+
+# Disable challenge-response authentication
+ChallengeResponseAuthentication no
+KbdInteractiveAuthentication no
+
+# Disable PAM authentication
+UsePAM yes
+
+# Enable strict modes
+StrictModes yes
+
+# Allow only key-based authentication
+PubkeyAuthentication yes
+
+# Disable X11 forwarding
+X11Forwarding no
+
+# Max number of authentication attempts
+MaxAuthTries 3
+
+# Disable gateway ports
+GatewayPorts no
+
+# Allow agent forwarding
+AllowAgentForwarding no
+
+# Permit empty passwords (disabled)
+PermitEmptyPasswords no
+
+PrintMotd yes
+
+AcceptEnv LANG LC_*
+
+Subsystem       sftp    /usr/lib/openssh/sftp-server
