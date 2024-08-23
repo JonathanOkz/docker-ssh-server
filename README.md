@@ -47,7 +47,7 @@ This project provides a Docker container based on Ubuntu that allows access to a
    Use Docker Compose to build and start the container:
 
    ```bash
-   docker-compose up --build
+   docker-compose up -d --build
    ```
 
    This command will build the Docker image and start the container with the specified configurations.
